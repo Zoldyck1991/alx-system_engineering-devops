@@ -1,4 +1,2 @@
 #!/bin/bash
-find . -type d -empty -exec sh -c 'for dir do printf "%s\n" "${dir##*/}"; done' sh {} +
-find . -type f -empty -exec sh -c 'for file do printf "%s\n" "${file##*/}"; done' sh {} +
-
+find . -empty -printf '%f\n'
